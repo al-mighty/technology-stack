@@ -1,5 +1,6 @@
 {
   "require":{
+    "phalcon/devtools": "dev-master",
     "twig/twig": "2.0.x-dev"
   }
 }

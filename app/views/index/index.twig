@@ -1,0 +1,29 @@
+<h1>Index Page</h1>
+<p>Mt name is {{ name }} <? echo $name; ?></p>
+
+<ul>
+    {#{%  for developer in users %}#}
+        {#<li>{{ developer }}: </li>#}
+    {#{% endfor %}#}
+
+</ul>
+    {%  for developer in users %}
+    <div class="workers">
+        <p>
+            <strong>1</strong>: {{ developer['name'] }} </br>
+            <strong>1</strong>: {{ developer['jobs'] }} </br>
+            <strong>1</strong>:
+        <ul>
+           {% for skill in developer['skills'] %}
+            <li>
+                {{ skill }}
+            </li>
+            {% endfor %}
+        </ul>
+
+        </p>
+    </div>
+    {% endfor %}
+
+
+
